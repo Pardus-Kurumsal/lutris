@@ -10,7 +10,7 @@ Build-Depends: debhelper,
  python3-gi,
  libgirepository1.0-dev
 Maintainer: Mathieu Comandon <strider@strycore.com>
-Standards-Version: 3.9.5
+Standards-Version: 3.9.8
 Vcs-Git: https://github.com/lutris/lutris
 Homepage: https://lutris.net
 X-Python-Version: >= 3.4
