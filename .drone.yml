@@ -20,6 +20,7 @@ build:
     volumes:
       - /packages:/packages
     commands:
+      - echo "deb http://depo.pardus.org.tr/pardus onyedi main non-free" > /etc/apt/sources.list
       - apt-get update
       - apt-get install /packages/$(basename $DRONE_REPO)/*.deb
   deploy:
@@ -28,8 +29,7 @@ build:
       - /packages:/packages
     commands:
       - apt-get update
-      - echo "TODO deployment container (pardus/pardus-deploy) is yet to be prepared"
       - ls -al /packages/$(basename $DRONE_REPO)
-      - echo "deployment commands go here"
+      - echo "Done."
 branches:
   - master
